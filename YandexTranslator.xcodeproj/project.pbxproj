@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030AB42C0DF7E9E46322E9DC /* TranslateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7462E0D6EC63DAFB1785B /* TranslateConfigurator.swift */; };
+		16CFABB88B10F75CFAEE2F7D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD95542B4079DAC48FF708 /* HistoryViewController.swift */; };
+		1AF0BCD76718C726AC99A03B /* TranslateViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F811694196B74D1FEB90A /* TranslateViewOutput.swift */; };
+		1C45D71D351CA9BF1DB5E3AF /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD67D0B2CCE4CE6A097362F /* HistoryInteractor.swift */; };
+		294264FEDAD45701CD9775AA /* TranslateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC85A6557AF8E86E219BE2 /* TranslateInitializer.swift */; };
+		29771E041771B2EA5AA71996 /* TranslateViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9B5DD3F55414CB3C280B89 /* TranslateViewInput.swift */; };
+		2CD12D33C551A3BE5225865D /* LanguageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E40CC58C01BBECAF06A6552 /* LanguageViewOutput.swift */; };
+		358A945858FAD69BF876B45D /* TranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D699EF818AA575BE64C11F /* TranslateRouterInput.swift */; };
+		3D056FFEFD6E124F42F21375 /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F999533223B2842E4C3AA6B1 /* LanguagePresenter.swift */; };
+		4EED4770A6C12441323955A7 /* HistoryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DF9D7BC568F2D28B4C99A /* HistoryInteractorOutput.swift */; };
+		5677E5B81BC2EB43D3A337B9 /* LanguageInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450C94BCE7382D5727B3754 /* LanguageInitializer.swift */; };
+		596180E2A4A2F585C6A316E7 /* LanguageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD2A65F00C11F69A53AD80 /* LanguageConfigurator.swift */; };
+		59E8102B6FA8329B6FC857D9 /* HistoryModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6ADD67534EE9150B47710 /* HistoryModuleInput.swift */; };
+		605AF67EE8801427F141C0C6 /* HistoryViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFB26BA5E27D497F7366DBE /* HistoryViewInput.swift */; };
+		63A919DD951B59CEE9467724 /* Pods_YandexTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238E1B83DAECFFD6F9CAEA4A /* Pods_YandexTranslator.framework */; };
+		667A077E7ED019FEF1EB76A6 /* LanguageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AD8300C552EFF1615707FC /* LanguageInteractor.swift */; };
+		7052B390EC086C9787664152 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA7F76DAEF963B5E5511EA3 /* LanguageViewController.swift */; };
+		8513896CA4B475C596B3FA1F /* HistoryInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF6C13D4E051557124402D /* HistoryInitializer.swift */; };
+		86053D5766E074ADDDC6EF76 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40D91D6AE651F5171039D1 /* HistoryRouter.swift */; };
+		937FBBA61B5B760E0D556429 /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5987A7B290161B17C00A6 /* TranslateRouter.swift */; };
+		9F35D055DCD7C257E1060B3A /* HistoryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60491718B669FC219D84EA49 /* HistoryInteractorInput.swift */; };
+		A097AF1BB88752A274551948 /* LanguageRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690C0FE598B3A3FC69AC8FD /* LanguageRouterInput.swift */; };
+		A9EBA65F57EA77E88F902704 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38324E22CC220301A35C297F /* HistoryPresenter.swift */; };
+		AAB6262571980CA5F071612A /* TranslateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3311C60287A99B7799C5F5 /* TranslateInteractor.swift */; };
+		B3FEB3802D81FCC4DEBDB18A /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B51DC7F8F8944CE89B23D /* TranslateViewController.swift */; };
+		BDBE69D6906735D1917CDF64 /* LanguageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D76BBFB837647C5161111 /* LanguageInteractorInput.swift */; };
+		C262DCBDC145A2ADD79A34D1 /* LanguageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A00BE915270AFEF7FC8F2 /* LanguageInteractorOutput.swift */; };
+		C5497DAFE669ECF3FBAED2DA /* TranslateModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B70B687AEC00BED1F9806 /* TranslateModuleInput.swift */; };
+		C722E14DEEB1CD8BA6FF756B /* LanguageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18F121B87ACB7962D4442A /* LanguageViewInput.swift */; };
+		CBBC8F7FC56DA6950AF487F0 /* HistoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86C09656952B30E2795AD3 /* HistoryConfigurator.swift */; };
+		CFE4FD8F4032A1CFD47B5C6D /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD203BDAD897E9468DA852 /* TranslatePresenter.swift */; };
+		D5A04C9AA6ED7048AEBF5619 /* LanguageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F4444B530FAED25F69F85 /* LanguageRouter.swift */; };
+		DFAD95D7E983C9A05ECC233F /* HistoryRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E90EA158F6495A1DAD48C /* HistoryRouterInput.swift */; };
+		E1C0BA2F0125ED836733D2A5 /* HistoryViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052647187129E3E5EC114484 /* HistoryViewOutput.swift */; };
+		E55A03FA0B1F1E29298490AE /* TranslateInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE029DD451CD20ED30D51C /* TranslateInteractorOutput.swift */; };
+		F13F3D059232FE90A7E33009 /* TranslateInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6993BBF452A6B26CB4308595 /* TranslateInteractorInput.swift */; };
+		F76CD2301E67413F00D680A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD22F1E67413F00D680A8 /* AppDelegate.swift */; };
+		F76CD2351E67413F00D680A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76CD2331E67413F00D680A8 /* Main.storyboard */; };
+		F76CD2371E67413F00D680A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76CD2361E67413F00D680A8 /* Assets.xcassets */; };
+		F76CD23A1E67413F00D680A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76CD2381E67413F00D680A8 /* LaunchScreen.storyboard */; };
+		F76CD2421E69462300D680A8 /* TranslateTextViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2411E69462300D680A8 /* TranslateTextViewAdapter.swift */; };
+		F76CD2481E69556700D680A8 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2471E69556700D680A8 /* TranslateService.swift */; };
+		F76CD24B1E695A6E00D680A8 /* ServicePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD24A1E695A6E00D680A8 /* ServicePolicy.swift */; };
+		F76CD24D1E695DB900D680A8 /* TranslateServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD24C1E695DB900D680A8 /* TranslateServiceAssembly.swift */; };
+		F76CD2521E6960BF00D680A8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2511E6960BF00D680A8 /* DataProvider.swift */; };
+		F76CD2541E69612A00D680A8 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2531E69612A00D680A8 /* Blocks.swift */; };
+		F76CD2561E69615A00D680A8 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2551E69615A00D680A8 /* Lang.swift */; };
+		F76CD2591E6963CB00D680A8 /* TranslateNetworkDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2581E6963CB00D680A8 /* TranslateNetworkDataProvider.swift */; };
+		F76CD25B1E6964AC00D680A8 /* TranslateOfflineDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD25A1E6964AC00D680A8 /* TranslateOfflineDataProvider.swift */; };
+		F76CD25F1E696BE900D680A8 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD25E1E696BE900D680A8 /* Transport.swift */; };
+		F76CD2611E696C6000D680A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2601E696C6000D680A8 /* Constants.swift */; };
+		F76CD2661E69723B00D680A8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CD2651E69723B00D680A8 /* Request.swift */; };
+		F774F7B31E69ADC700D518D9 /* DetectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7B21E69ADC700D518D9 /* DetectResponse.swift */; };
+		F774F7B51E69C4DE00D518D9 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7B41E69C4DE00D518D9 /* Direction.swift */; };
+		F774F7B71E69D60100D518D9 /* TranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7B61E69D60100D518D9 /* TranslateResponse.swift */; };
+		F774F7B91E69D8CA00D518D9 /* LangsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7B81E69D8CA00D518D9 /* LangsResponse.swift */; };
+		F774F7C11E69EBD700D518D9 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7C01E69EBD700D518D9 /* Dictionary.swift */; };
+		F774F7C31E69EBFC00D518D9 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7C21E69EBFC00D518D9 /* Definition.swift */; };
+		F774F7C51E69EC3C00D518D9 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7C41E69EC3C00D518D9 /* Translation.swift */; };
+		F774F7C71E69ECBF00D518D9 /* Synonym.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7C61E69ECBF00D518D9 /* Synonym.swift */; };
+		F774F7C91E69ED2000D518D9 /* Mean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7C81E69ED2000D518D9 /* Mean.swift */; };
+		F774F7CB1E69ED6D00D518D9 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7CA1E69ED6D00D518D9 /* Example.swift */; };
+		F774F7CD1E6ABB5300D518D9 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7CC1E6ABB5300D518D9 /* DAO.swift */; };
+		F774F7D11E6AD95500D518D9 /* LangDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7D01E6AD95500D518D9 /* LangDAO.swift */; };
+		F774F7D31E6ADB6C00D518D9 /* DirectionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7D21E6ADB6C00D518D9 /* DirectionDAO.swift */; };
+		F774F7D91E6AE64800D518D9 /* DictionaryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7D81E6AE64800D518D9 /* DictionaryDAO.swift */; };
+		F774F7DB1E6AE8BE00D518D9 /* DefinitionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7DA1E6AE8BE00D518D9 /* DefinitionDAO.swift */; };
+		F774F7DD1E6AE91900D518D9 /* TranslationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7DC1E6AE91900D518D9 /* TranslationDAO.swift */; };
+		F774F7DF1E6AE92E00D518D9 /* SynonymDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7DE1E6AE92E00D518D9 /* SynonymDAO.swift */; };
+		F774F7E11E6AE94000D518D9 /* MeanDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7E01E6AE94000D518D9 /* MeanDAO.swift */; };
+		F774F7E31E6AE95900D518D9 /* ExampleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7E21E6AE95900D518D9 /* ExampleDAO.swift */; };
+		F774F7E51E6D5EC600D518D9 /* TranslateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7E41E6D5EC600D518D9 /* TranslateRequest.swift */; };
+		F774F7E71E6D6DD600D518D9 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7E61E6D6DD600D518D9 /* Errors.swift */; };
+		F774F7E91E6D7C3600D518D9 /* TranslateTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7E81E6D7C3600D518D9 /* TranslateTableViewAdapter.swift */; };
+		F774F7EC1E6D7F7500D518D9 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7EB1E6D7F7500D518D9 /* NSMutableAttributedString.swift */; };
+		F774F7F01E6D808E00D518D9 /* TranslateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F7EE1E6D808E00D518D9 /* TranslateTableViewCell.swift */; };
+		F774F7F11E6D808E00D518D9 /* TranslateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F774F7EF1E6D808E00D518D9 /* TranslateTableViewCell.xib */; };
+		F774F8041E6EE00C00D518D9 /* LanguageTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774F8031E6EE00C00D518D9 /* LanguageTableViewAdapter.swift */; };
+		F7BE851F1E6F04C400D24CE2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE851E1E6F04C400D24CE2 /* String.swift */; };
+		F7BE85211E6F24BC00D24CE2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85201E6F24BC00D24CE2 /* Array.swift */; };
+		F7BE85231E71D99400D24CE2 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85221E71D99400D24CE2 /* Enums.swift */; };
+		F7BE85281E7683F300D24CE2 /* TranslatedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85271E7683F300D24CE2 /* TranslatedText.swift */; };
+		F7BE852A1E76878400D24CE2 /* TranslatedTextDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85291E76878400D24CE2 /* TranslatedTextDAO.swift */; };
+		F7BE852C1E76EFA200D24CE2 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE852B1E76EFA200D24CE2 /* SettingsTableViewController.swift */; };
+		F7BE852E1E76F04D00D24CE2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE852D1E76F04D00D24CE2 /* UIView.swift */; };
+		F7BE85301E76F3E000D24CE2 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE852F1E76F3E000D24CE2 /* HistoryTableViewCell.swift */; };
+		F7BE85321E76F4A800D24CE2 /* HistoryTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85311E76F4A800D24CE2 /* HistoryTableViewAdapter.swift */; };
+		F7BE85351E77110400D24CE2 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85341E77110400D24CE2 /* HistoryService.swift */; };
+		F7BE86BF1E7D24B400D24CE2 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */; };
+		F7BE86C61E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C51E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift */; };
+		F7BE86C81E7DD6D300D24CE2 /* ViperModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C71E7DD6D300D24CE2 /* ViperModuleViewController.swift */; };
+		F7BE86CA1E7DD6F600D24CE2 /* ViperModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C91E7DD6F600D24CE2 /* ViperModuleInput.swift */; };
+		F7BE86CC1E7DD70A00D24CE2 /* ViperModuleConfigurationBlockHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86CB1E7DD70A00D24CE2 /* ViperModuleConfigurationBlockHolder.swift */; };
+		F7BE86D01E7E98ED00D24CE2 /* HistorySearchBarAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86CF1E7E98EC00D24CE2 /* HistorySearchBarAdapter.swift */; };
+		F7BE86D21E7E9F7E00D24CE2 /* HistoryViewEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86D11E7E9F7E00D24CE2 /* HistoryViewEmpty.swift */; };
+		FA204112F3CA6ADB0143E329 /* LanguageModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2364881D904CF39C2F4C9660 /* LanguageModuleInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03D699EF818AA575BE64C11F /* TranslateRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateRouterInput.swift; sourceTree = "<group>"; };
+		052647187129E3E5EC114484 /* HistoryViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryViewOutput.swift; sourceTree = "<group>"; };
+		1690C0FE598B3A3FC69AC8FD /* LanguageRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageRouterInput.swift; sourceTree = "<group>"; };
+		1AA7F76DAEF963B5E5511EA3 /* LanguageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		1E7D76BBFB837647C5161111 /* LanguageInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageInteractorInput.swift; sourceTree = "<group>"; };
+		20AD95542B4079DAC48FF708 /* HistoryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		2364881D904CF39C2F4C9660 /* LanguageModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageModuleInput.swift; sourceTree = "<group>"; };
+		238E1B83DAECFFD6F9CAEA4A /* Pods_YandexTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285A00BE915270AFEF7FC8F2 /* LanguageInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageInteractorOutput.swift; sourceTree = "<group>"; };
+		2B18F121B87ACB7962D4442A /* LanguageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageViewInput.swift; sourceTree = "<group>"; };
+		310B51DC7F8F8944CE89B23D /* TranslateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		38324E22CC220301A35C297F /* HistoryPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		3E40CC58C01BBECAF06A6552 /* LanguageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageViewOutput.swift; sourceTree = "<group>"; };
+		4EF7462E0D6EC63DAFB1785B /* TranslateConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateConfigurator.swift; sourceTree = "<group>"; };
+		5CFF6C13D4E051557124402D /* HistoryInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryInitializer.swift; sourceTree = "<group>"; };
+		5E6DF9D7BC568F2D28B4C99A /* HistoryInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryInteractorOutput.swift; sourceTree = "<group>"; };
+		60491718B669FC219D84EA49 /* HistoryInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryInteractorInput.swift; sourceTree = "<group>"; };
+		6450C94BCE7382D5727B3754 /* LanguageInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageInitializer.swift; sourceTree = "<group>"; };
+		6993BBF452A6B26CB4308595 /* TranslateInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractorInput.swift; sourceTree = "<group>"; };
+		73A5987A7B290161B17C00A6 /* TranslateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
+		8C40D91D6AE651F5171039D1 /* HistoryRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		ACD67D0B2CCE4CE6A097362F /* HistoryInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		B30F811694196B74D1FEB90A /* TranslateViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewOutput.swift; sourceTree = "<group>"; };
+		B697EBCAC533520FBAFDB3EB /* Pods-YandexTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexTranslator.release.xcconfig"; path = "Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		BA0B70B687AEC00BED1F9806 /* TranslateModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateModuleInput.swift; sourceTree = "<group>"; };
+		BA6E90EA158F6495A1DAD48C /* HistoryRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryRouterInput.swift; sourceTree = "<group>"; };
+		BFB6ADD67534EE9150B47710 /* HistoryModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryModuleInput.swift; sourceTree = "<group>"; };
+		C7CD203BDAD897E9468DA852 /* TranslatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
+		C9DD2A65F00C11F69A53AD80 /* LanguageConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageConfigurator.swift; sourceTree = "<group>"; };
+		CF3311C60287A99B7799C5F5 /* TranslateInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractor.swift; sourceTree = "<group>"; };
+		CF9B5DD3F55414CB3C280B89 /* TranslateViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewInput.swift; sourceTree = "<group>"; };
+		D25F4444B530FAED25F69F85 /* LanguageRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageRouter.swift; sourceTree = "<group>"; };
+		D5AD8300C552EFF1615707FC /* LanguageInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageInteractor.swift; sourceTree = "<group>"; };
+		D8DC85A6557AF8E86E219BE2 /* TranslateInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInitializer.swift; sourceTree = "<group>"; };
+		EA518BF5F8BCFF3178477C86 /* Pods-YandexTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexTranslator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		EA86C09656952B30E2795AD3 /* HistoryConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryConfigurator.swift; sourceTree = "<group>"; };
+		EAFB26BA5E27D497F7366DBE /* HistoryViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryViewInput.swift; sourceTree = "<group>"; };
+		F3BE029DD451CD20ED30D51C /* TranslateInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractorOutput.swift; sourceTree = "<group>"; };
+		F76CD22C1E67413F00D680A8 /* YandexTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76CD22F1E67413F00D680A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76CD2341E67413F00D680A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76CD2361E67413F00D680A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76CD2391E67413F00D680A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76CD23B1E67413F00D680A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76CD2411E69462300D680A8 /* TranslateTextViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateTextViewAdapter.swift; sourceTree = "<group>"; };
+		F76CD2471E69556700D680A8 /* TranslateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		F76CD24A1E695A6E00D680A8 /* ServicePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePolicy.swift; sourceTree = "<group>"; };
+		F76CD24C1E695DB900D680A8 /* TranslateServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateServiceAssembly.swift; sourceTree = "<group>"; };
+		F76CD2511E6960BF00D680A8 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		F76CD2531E69612A00D680A8 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		F76CD2551E69615A00D680A8 /* Lang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
+		F76CD2581E6963CB00D680A8 /* TranslateNetworkDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateNetworkDataProvider.swift; sourceTree = "<group>"; };
+		F76CD25A1E6964AC00D680A8 /* TranslateOfflineDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateOfflineDataProvider.swift; sourceTree = "<group>"; };
+		F76CD25E1E696BE900D680A8 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		F76CD2601E696C6000D680A8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F76CD2651E69723B00D680A8 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F774F7B21E69ADC700D518D9 /* DetectResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectResponse.swift; sourceTree = "<group>"; };
+		F774F7B41E69C4DE00D518D9 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		F774F7B61E69D60100D518D9 /* TranslateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateResponse.swift; sourceTree = "<group>"; };
+		F774F7B81E69D8CA00D518D9 /* LangsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangsResponse.swift; sourceTree = "<group>"; };
+		F774F7C01E69EBD700D518D9 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		F774F7C21E69EBFC00D518D9 /* Definition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		F774F7C41E69EC3C00D518D9 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		F774F7C61E69ECBF00D518D9 /* Synonym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synonym.swift; sourceTree = "<group>"; };
+		F774F7C81E69ED2000D518D9 /* Mean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mean.swift; sourceTree = "<group>"; };
+		F774F7CA1E69ED6D00D518D9 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		F774F7CC1E6ABB5300D518D9 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		F774F7D01E6AD95500D518D9 /* LangDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangDAO.swift; sourceTree = "<group>"; };
+		F774F7D21E6ADB6C00D518D9 /* DirectionDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionDAO.swift; sourceTree = "<group>"; };
+		F774F7D81E6AE64800D518D9 /* DictionaryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryDAO.swift; sourceTree = "<group>"; };
+		F774F7DA1E6AE8BE00D518D9 /* DefinitionDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionDAO.swift; sourceTree = "<group>"; };
+		F774F7DC1E6AE91900D518D9 /* TranslationDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationDAO.swift; sourceTree = "<group>"; };
+		F774F7DE1E6AE92E00D518D9 /* SynonymDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynonymDAO.swift; sourceTree = "<group>"; };
+		F774F7E01E6AE94000D518D9 /* MeanDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeanDAO.swift; sourceTree = "<group>"; };
+		F774F7E21E6AE95900D518D9 /* ExampleDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDAO.swift; sourceTree = "<group>"; };
+		F774F7E41E6D5EC600D518D9 /* TranslateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateRequest.swift; sourceTree = "<group>"; };
+		F774F7E61E6D6DD600D518D9 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F774F7E81E6D7C3600D518D9 /* TranslateTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateTableViewAdapter.swift; sourceTree = "<group>"; };
+		F774F7EB1E6D7F7500D518D9 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		F774F7EE1E6D808E00D518D9 /* TranslateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateTableViewCell.swift; sourceTree = "<group>"; };
+		F774F7EF1E6D808E00D518D9 /* TranslateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TranslateTableViewCell.xib; sourceTree = "<group>"; };
+		F774F8031E6EE00C00D518D9 /* LanguageTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewAdapter.swift; sourceTree = "<group>"; };
+		F7BE851E1E6F04C400D24CE2 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F7BE85201E6F24BC00D24CE2 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F7BE85221E71D99400D24CE2 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F7BE85271E7683F300D24CE2 /* TranslatedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatedText.swift; sourceTree = "<group>"; };
+		F7BE85291E76878400D24CE2 /* TranslatedTextDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatedTextDAO.swift; sourceTree = "<group>"; };
+		F7BE852B1E76EFA200D24CE2 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		F7BE852D1E76F04D00D24CE2 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F7BE852F1E76F3E000D24CE2 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		F7BE85311E76F4A800D24CE2 /* HistoryTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewAdapter.swift; sourceTree = "<group>"; };
+		F7BE85341E77110400D24CE2 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		F7BE86C51E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandler.swift; sourceTree = "<group>"; };
+		F7BE86C71E7DD6D300D24CE2 /* ViperModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleViewController.swift; sourceTree = "<group>"; };
+		F7BE86C91E7DD6F600D24CE2 /* ViperModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleInput.swift; sourceTree = "<group>"; };
+		F7BE86CB1E7DD70A00D24CE2 /* ViperModuleConfigurationBlockHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleConfigurationBlockHolder.swift; sourceTree = "<group>"; };
+		F7BE86CF1E7E98EC00D24CE2 /* HistorySearchBarAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySearchBarAdapter.swift; sourceTree = "<group>"; };
+		F7BE86D11E7E9F7E00D24CE2 /* HistoryViewEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewEmpty.swift; sourceTree = "<group>"; };
+		F999533223B2842E4C3AA6B1 /* LanguagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76CD2291E67413F00D680A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A919DD951B59CEE9467724 /* Pods_YandexTranslator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15C6E0050D10CA308110944C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFB6ADD67534EE9150B47710 /* HistoryModuleInput.swift */,
+				38324E22CC220301A35C297F /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		19CF988548B8D5D7666DE837 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1690C0FE598B3A3FC69AC8FD /* LanguageRouterInput.swift */,
+				D25F4444B530FAED25F69F85 /* LanguageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2332680C6FA507B5FF83DCC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE86CE1E7E98AF00D24CE2 /* Adapter */,
+				F7BE86CD1E7E98A900D24CE2 /* Cell */,
+				EAFB26BA5E27D497F7366DBE /* HistoryViewInput.swift */,
+				052647187129E3E5EC114484 /* HistoryViewOutput.swift */,
+				20AD95542B4079DAC48FF708 /* HistoryViewController.swift */,
+				F7BE86D11E7E9F7E00D24CE2 /* HistoryViewEmpty.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3777F8C09F59061CA8AC000F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				60491718B669FC219D84EA49 /* HistoryInteractorInput.swift */,
+				5E6DF9D7BC568F2D28B4C99A /* HistoryInteractorOutput.swift */,
+				ACD67D0B2CCE4CE6A097362F /* HistoryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3996DFDFF4B65FE01879ED36 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2364881D904CF39C2F4C9660 /* LanguageModuleInput.swift */,
+				F999533223B2842E4C3AA6B1 /* LanguagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48A6ED00D685BDF570B205A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE86C31E7DD5CC00D24CE2 /* Common */,
+				F76CD2381E67413F00D680A8 /* LaunchScreen.storyboard */,
+				F76CD2331E67413F00D680A8 /* Main.storyboard */,
+				7E9F6CEC89DBBBD5E2139002 /* Language */,
+				A4E828A3CE337CFBBE8E8408 /* Translate */,
+				9B0240AB22C2C112E71128C8 /* History */,
+				9D9D76DC81516E544CE86E42 /* Settings */,
+			);
+			name = Presentation;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4D6248E35EAEE2E1C1337D83 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6993BBF452A6B26CB4308595 /* TranslateInteractorInput.swift */,
+				F3BE029DD451CD20ED30D51C /* TranslateInteractorOutput.swift */,
+				CF3311C60287A99B7799C5F5 /* TranslateInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7E9F6CEC89DBBBD5E2139002 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				F063FF608074D39770D94AE9 /* View */,
+				3996DFDFF4B65FE01879ED36 /* Presenter */,
+				97DAF7B1EE9B91A1EB87D623 /* Interactor */,
+				19CF988548B8D5D7666DE837 /* Router */,
+				BC0DE0319E2AD703011261A0 /* Configurator */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		97DAF7B1EE9B91A1EB87D623 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E7D76BBFB837647C5161111 /* LanguageInteractorInput.swift */,
+				285A00BE915270AFEF7FC8F2 /* LanguageInteractorOutput.swift */,
+				D5AD8300C552EFF1615707FC /* LanguageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9B0240AB22C2C112E71128C8 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2332680C6FA507B5FF83DCC0 /* View */,
+				15C6E0050D10CA308110944C /* Presenter */,
+				3777F8C09F59061CA8AC000F /* Interactor */,
+				E3FF27F80A208C83122D73FF /* Router */,
+				B4B30F95E8BE6CFA3DAF893F /* Configurator */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		9CE76EE79CF8A91022B12385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE851D1E6EFE5E00D24CE2 /* Adapter */,
+				F774F7ED1E6D805100D518D9 /* Cell */,
+				CF9B5DD3F55414CB3C280B89 /* TranslateViewInput.swift */,
+				B30F811694196B74D1FEB90A /* TranslateViewOutput.swift */,
+				310B51DC7F8F8944CE89B23D /* TranslateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D9D76DC81516E544CE86E42 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE852B1E76EFA200D24CE2 /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A1BDD6ED1A58220B758713A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				03D699EF818AA575BE64C11F /* TranslateRouterInput.swift */,
+				73A5987A7B290161B17C00A6 /* TranslateRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A4E828A3CE337CFBBE8E8408 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				9CE76EE79CF8A91022B12385 /* View */,
+				D677121B82BE5E5F678CE477 /* Presenter */,
+				4D6248E35EAEE2E1C1337D83 /* Interactor */,
+				A1BDD6ED1A58220B758713A4 /* Router */,
+				B07C4B386C0899609AD4AF27 /* Configurator */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		B07C4B386C0899609AD4AF27 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7462E0D6EC63DAFB1785B /* TranslateConfigurator.swift */,
+				D8DC85A6557AF8E86E219BE2 /* TranslateInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B4B30F95E8BE6CFA3DAF893F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				EA86C09656952B30E2795AD3 /* HistoryConfigurator.swift */,
+				5CFF6C13D4E051557124402D /* HistoryInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BC0DE0319E2AD703011261A0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD2A65F00C11F69A53AD80 /* LanguageConfigurator.swift */,
+				6450C94BCE7382D5727B3754 /* LanguageInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D40CD8153EEA8E5C795E6CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA518BF5F8BCFF3178477C86 /* Pods-YandexTranslator.debug.xcconfig */,
+				B697EBCAC533520FBAFDB3EB /* Pods-YandexTranslator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D677121B82BE5E5F678CE477 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA0B70B687AEC00BED1F9806 /* TranslateModuleInput.swift */,
+				C7CD203BDAD897E9468DA852 /* TranslatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6ECDF01DDD8830A65466C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238E1B83DAECFFD6F9CAEA4A /* Pods_YandexTranslator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3FF27F80A208C83122D73FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E90EA158F6495A1DAD48C /* HistoryRouterInput.swift */,
+				8C40D91D6AE651F5171039D1 /* HistoryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F063FF608074D39770D94AE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B18F121B87ACB7962D4442A /* LanguageViewInput.swift */,
+				3E40CC58C01BBECAF06A6552 /* LanguageViewOutput.swift */,
+				1AA7F76DAEF963B5E5511EA3 /* LanguageViewController.swift */,
+				F774F8031E6EE00C00D518D9 /* LanguageTableViewAdapter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F76CD2231E67413F00D680A8 = {
+			isa = PBXGroup;
+			children = (
+				F76CD22E1E67413F00D680A8 /* YandexTranslator */,
+				F76CD22D1E67413F00D680A8 /* Products */,
+				D40CD8153EEA8E5C795E6CED /* Pods */,
+				D6ECDF01DDD8830A65466C8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F76CD22D1E67413F00D680A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD22C1E67413F00D680A8 /* YandexTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76CD22E1E67413F00D680A8 /* YandexTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7EA1E6D7F6700D518D9 /* Extensions */,
+				F76CD2461E69538D00D680A8 /* Application */,
+				F76CD2441E69531800D680A8 /* Model */,
+				F76CD2431E6952E800D680A8 /* BusinessLogic */,
+				48A6ED00D685BDF570B205A3 /* Presentation */,
+				F76CD2451E69537900D680A8 /* Supporting Files */,
+			);
+			path = YandexTranslator;
+			sourceTree = "<group>";
+		};
+		F76CD2431E6952E800D680A8 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD2501E6960AE00D680A8 /* Common */,
+				F774F7CF1E6AD94300D518D9 /* DAO */,
+				F7BE85331E7710DF00D24CE2 /* History */,
+				F76CD25C1E69671F00D680A8 /* Translate */,
+			);
+			name = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		F76CD2441E69531800D680A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7BB1E69D9BE00D518D9 /* Response */,
+				F774F7BA1E69D9B300D518D9 /* EntityEntry */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F76CD2451E69537900D680A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD2361E67413F00D680A8 /* Assets.xcassets */,
+				F76CD23B1E67413F00D680A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F76CD2461E69538D00D680A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD22F1E67413F00D680A8 /* AppDelegate.swift */,
+				F76CD2531E69612A00D680A8 /* Blocks.swift */,
+				F76CD2601E696C6000D680A8 /* Constants.swift */,
+				F7BE85221E71D99400D24CE2 /* Enums.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F76CD2501E6960AE00D680A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD24A1E695A6E00D680A8 /* ServicePolicy.swift */,
+				F774F7E61E6D6DD600D518D9 /* Errors.swift */,
+				F76CD2511E6960BF00D680A8 /* DataProvider.swift */,
+				F76CD25E1E696BE900D680A8 /* Transport.swift */,
+				F76CD2651E69723B00D680A8 /* Request.swift */,
+				F774F7CC1E6ABB5300D518D9 /* DAO.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F76CD25C1E69671F00D680A8 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD2471E69556700D680A8 /* TranslateService.swift */,
+				F76CD24C1E695DB900D680A8 /* TranslateServiceAssembly.swift */,
+				F774F7E41E6D5EC600D518D9 /* TranslateRequest.swift */,
+				F76CD2581E6963CB00D680A8 /* TranslateNetworkDataProvider.swift */,
+				F76CD25A1E6964AC00D680A8 /* TranslateOfflineDataProvider.swift */,
+			);
+			name = Translate;
+			sourceTree = "<group>";
+		};
+		F774F7BA1E69D9B300D518D9 /* EntityEntry */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD2551E69615A00D680A8 /* Lang.swift */,
+				F774F7B41E69C4DE00D518D9 /* Direction.swift */,
+				F774F7C01E69EBD700D518D9 /* Dictionary.swift */,
+				F774F7C21E69EBFC00D518D9 /* Definition.swift */,
+				F774F7C41E69EC3C00D518D9 /* Translation.swift */,
+				F774F7C61E69ECBF00D518D9 /* Synonym.swift */,
+				F774F7C81E69ED2000D518D9 /* Mean.swift */,
+				F774F7CA1E69ED6D00D518D9 /* Example.swift */,
+				F7BE85271E7683F300D24CE2 /* TranslatedText.swift */,
+			);
+			name = EntityEntry;
+			sourceTree = "<group>";
+		};
+		F774F7BB1E69D9BE00D518D9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7B21E69ADC700D518D9 /* DetectResponse.swift */,
+				F774F7B61E69D60100D518D9 /* TranslateResponse.swift */,
+				F774F7B81E69D8CA00D518D9 /* LangsResponse.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		F774F7CF1E6AD94300D518D9 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7D01E6AD95500D518D9 /* LangDAO.swift */,
+				F774F7D21E6ADB6C00D518D9 /* DirectionDAO.swift */,
+				F774F7D81E6AE64800D518D9 /* DictionaryDAO.swift */,
+				F774F7DA1E6AE8BE00D518D9 /* DefinitionDAO.swift */,
+				F774F7DC1E6AE91900D518D9 /* TranslationDAO.swift */,
+				F774F7DE1E6AE92E00D518D9 /* SynonymDAO.swift */,
+				F774F7E01E6AE94000D518D9 /* MeanDAO.swift */,
+				F774F7E21E6AE95900D518D9 /* ExampleDAO.swift */,
+				F7BE85291E76878400D24CE2 /* TranslatedTextDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		F774F7EA1E6D7F6700D518D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7EB1E6D7F7500D518D9 /* NSMutableAttributedString.swift */,
+				F7BE851E1E6F04C400D24CE2 /* String.swift */,
+				F7BE85201E6F24BC00D24CE2 /* Array.swift */,
+				F7BE852D1E76F04D00D24CE2 /* UIView.swift */,
+				F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F774F7ED1E6D805100D518D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F774F7EE1E6D808E00D518D9 /* TranslateTableViewCell.swift */,
+				F774F7EF1E6D808E00D518D9 /* TranslateTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F7BE851D1E6EFE5E00D24CE2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F76CD2411E69462300D680A8 /* TranslateTextViewAdapter.swift */,
+				F774F7E81E6D7C3600D518D9 /* TranslateTableViewAdapter.swift */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		F7BE85331E7710DF00D24CE2 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE85341E77110400D24CE2 /* HistoryService.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		F7BE86C31E7DD5CC00D24CE2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE86C41E7DD5DB00D24CE2 /* Viper */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F7BE86C41E7DD5DB00D24CE2 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE86CB1E7DD70A00D24CE2 /* ViperModuleConfigurationBlockHolder.swift */,
+				F7BE86C51E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift */,
+				F7BE86C71E7DD6D300D24CE2 /* ViperModuleViewController.swift */,
+				F7BE86C91E7DD6F600D24CE2 /* ViperModuleInput.swift */,
+			);
+			name = Viper;
+			sourceTree = "<group>";
+		};
+		F7BE86CD1E7E98A900D24CE2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE852F1E76F3E000D24CE2 /* HistoryTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F7BE86CE1E7E98AF00D24CE2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE85311E76F4A800D24CE2 /* HistoryTableViewAdapter.swift */,
+				F7BE86CF1E7E98EC00D24CE2 /* HistorySearchBarAdapter.swift */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76CD22B1E67413F00D680A8 /* YandexTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76CD23E1E67413F00D680A8 /* Build configuration list for PBXNativeTarget "YandexTranslator" */;
+			buildPhases = (
+				4B3C452806962B14C55F7DB6 /* [CP] Check Pods Manifest.lock */,
+				F76CD2281E67413F00D680A8 /* Sources */,
+				F76CD2291E67413F00D680A8 /* Frameworks */,
+				F76CD22A1E67413F00D680A8 /* Resources */,
+				B79A282F2AFC2BE6872F4A88 /* [CP] Embed Pods Frameworks */,
+				31E57A176E419B91FEE4228B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexTranslator;
+			productName = YandexTranslator;
+			productReference = F76CD22C1E67413F00D680A8 /* YandexTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76CD2241E67413F00D680A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Igor Voynov";
+				TargetAttributes = {
+					F76CD22B1E67413F00D680A8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = URPAD7DNKD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F76CD2271E67413F00D680A8 /* Build configuration list for PBXProject "YandexTranslator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76CD2231E67413F00D680A8;
+			productRefGroup = F76CD22D1E67413F00D680A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76CD22B1E67413F00D680A8 /* YandexTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76CD22A1E67413F00D680A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F774F7F11E6D808E00D518D9 /* TranslateTableViewCell.xib in Resources */,
+				F76CD23A1E67413F00D680A8 /* LaunchScreen.storyboard in Resources */,
+				F76CD2371E67413F00D680A8 /* Assets.xcassets in Resources */,
+				F76CD2351E67413F00D680A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31E57A176E419B91FEE4228B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3C452806962B14C55F7DB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B79A282F2AFC2BE6872F4A88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YandexTranslator/Pods-YandexTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76CD2281E67413F00D680A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BE851F1E6F04C400D24CE2 /* String.swift in Sources */,
+				F76CD2301E67413F00D680A8 /* AppDelegate.swift in Sources */,
+				F774F8041E6EE00C00D518D9 /* LanguageTableViewAdapter.swift in Sources */,
+				29771E041771B2EA5AA71996 /* TranslateViewInput.swift in Sources */,
+				1AF0BCD76718C726AC99A03B /* TranslateViewOutput.swift in Sources */,
+				F7BE86CC1E7DD70A00D24CE2 /* ViperModuleConfigurationBlockHolder.swift in Sources */,
+				B3FEB3802D81FCC4DEBDB18A /* TranslateViewController.swift in Sources */,
+				F76CD2561E69615A00D680A8 /* Lang.swift in Sources */,
+				C5497DAFE669ECF3FBAED2DA /* TranslateModuleInput.swift in Sources */,
+				F774F7C31E69EBFC00D518D9 /* Definition.swift in Sources */,
+				F76CD2661E69723B00D680A8 /* Request.swift in Sources */,
+				F7BE86C61E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift in Sources */,
+				F774F7B31E69ADC700D518D9 /* DetectResponse.swift in Sources */,
+				F774F7C91E69ED2000D518D9 /* Mean.swift in Sources */,
+				F7BE86CA1E7DD6F600D24CE2 /* ViperModuleInput.swift in Sources */,
+				F76CD25F1E696BE900D680A8 /* Transport.swift in Sources */,
+				F774F7E91E6D7C3600D518D9 /* TranslateTableViewAdapter.swift in Sources */,
+				CFE4FD8F4032A1CFD47B5C6D /* TranslatePresenter.swift in Sources */,
+				F76CD2591E6963CB00D680A8 /* TranslateNetworkDataProvider.swift in Sources */,
+				F13F3D059232FE90A7E33009 /* TranslateInteractorInput.swift in Sources */,
+				F7BE852C1E76EFA200D24CE2 /* SettingsTableViewController.swift in Sources */,
+				F774F7B91E69D8CA00D518D9 /* LangsResponse.swift in Sources */,
+				F76CD24B1E695A6E00D680A8 /* ServicePolicy.swift in Sources */,
+				E55A03FA0B1F1E29298490AE /* TranslateInteractorOutput.swift in Sources */,
+				F774F7C51E69EC3C00D518D9 /* Translation.swift in Sources */,
+				AAB6262571980CA5F071612A /* TranslateInteractor.swift in Sources */,
+				358A945858FAD69BF876B45D /* TranslateRouterInput.swift in Sources */,
+				F7BE85281E7683F300D24CE2 /* TranslatedText.swift in Sources */,
+				937FBBA61B5B760E0D556429 /* TranslateRouter.swift in Sources */,
+				030AB42C0DF7E9E46322E9DC /* TranslateConfigurator.swift in Sources */,
+				294264FEDAD45701CD9775AA /* TranslateInitializer.swift in Sources */,
+				605AF67EE8801427F141C0C6 /* HistoryViewInput.swift in Sources */,
+				F774F7C71E69ECBF00D518D9 /* Synonym.swift in Sources */,
+				F76CD2421E69462300D680A8 /* TranslateTextViewAdapter.swift in Sources */,
+				F76CD2541E69612A00D680A8 /* Blocks.swift in Sources */,
+				F7BE86C81E7DD6D300D24CE2 /* ViperModuleViewController.swift in Sources */,
+				E1C0BA2F0125ED836733D2A5 /* HistoryViewOutput.swift in Sources */,
+				F774F7C11E69EBD700D518D9 /* Dictionary.swift in Sources */,
+				F774F7DB1E6AE8BE00D518D9 /* DefinitionDAO.swift in Sources */,
+				F774F7D11E6AD95500D518D9 /* LangDAO.swift in Sources */,
+				16CFABB88B10F75CFAEE2F7D /* HistoryViewController.swift in Sources */,
+				F774F7E11E6AE94000D518D9 /* MeanDAO.swift in Sources */,
+				59E8102B6FA8329B6FC857D9 /* HistoryModuleInput.swift in Sources */,
+				A9EBA65F57EA77E88F902704 /* HistoryPresenter.swift in Sources */,
+				F774F7E51E6D5EC600D518D9 /* TranslateRequest.swift in Sources */,
+				9F35D055DCD7C257E1060B3A /* HistoryInteractorInput.swift in Sources */,
+				F7BE85351E77110400D24CE2 /* HistoryService.swift in Sources */,
+				4EED4770A6C12441323955A7 /* HistoryInteractorOutput.swift in Sources */,
+				F774F7B71E69D60100D518D9 /* TranslateResponse.swift in Sources */,
+				F7BE86BF1E7D24B400D24CE2 /* DispatchQueue.swift in Sources */,
+				F774F7DD1E6AE91900D518D9 /* TranslationDAO.swift in Sources */,
+				F76CD2481E69556700D680A8 /* TranslateService.swift in Sources */,
+				F7BE85321E76F4A800D24CE2 /* HistoryTableViewAdapter.swift in Sources */,
+				F774F7CB1E69ED6D00D518D9 /* Example.swift in Sources */,
+				F76CD25B1E6964AC00D680A8 /* TranslateOfflineDataProvider.swift in Sources */,
+				1C45D71D351CA9BF1DB5E3AF /* HistoryInteractor.swift in Sources */,
+				F76CD2521E6960BF00D680A8 /* DataProvider.swift in Sources */,
+				F774F7D91E6AE64800D518D9 /* DictionaryDAO.swift in Sources */,
+				F7BE86D21E7E9F7E00D24CE2 /* HistoryViewEmpty.swift in Sources */,
+				DFAD95D7E983C9A05ECC233F /* HistoryRouterInput.swift in Sources */,
+				86053D5766E074ADDDC6EF76 /* HistoryRouter.swift in Sources */,
+				F774F7E71E6D6DD600D518D9 /* Errors.swift in Sources */,
+				CBBC8F7FC56DA6950AF487F0 /* HistoryConfigurator.swift in Sources */,
+				8513896CA4B475C596B3FA1F /* HistoryInitializer.swift in Sources */,
+				F76CD24D1E695DB900D680A8 /* TranslateServiceAssembly.swift in Sources */,
+				F774F7B51E69C4DE00D518D9 /* Direction.swift in Sources */,
+				F7BE85211E6F24BC00D24CE2 /* Array.swift in Sources */,
+				F774F7F01E6D808E00D518D9 /* TranslateTableViewCell.swift in Sources */,
+				F774F7D31E6ADB6C00D518D9 /* DirectionDAO.swift in Sources */,
+				F774F7DF1E6AE92E00D518D9 /* SynonymDAO.swift in Sources */,
+				F774F7CD1E6ABB5300D518D9 /* DAO.swift in Sources */,
+				F7BE86D01E7E98ED00D24CE2 /* HistorySearchBarAdapter.swift in Sources */,
+				F7BE85231E71D99400D24CE2 /* Enums.swift in Sources */,
+				F7BE852E1E76F04D00D24CE2 /* UIView.swift in Sources */,
+				F76CD2611E696C6000D680A8 /* Constants.swift in Sources */,
+				F774F7E31E6AE95900D518D9 /* ExampleDAO.swift in Sources */,
+				F774F7EC1E6D7F7500D518D9 /* NSMutableAttributedString.swift in Sources */,
+				C722E14DEEB1CD8BA6FF756B /* LanguageViewInput.swift in Sources */,
+				2CD12D33C551A3BE5225865D /* LanguageViewOutput.swift in Sources */,
+				7052B390EC086C9787664152 /* LanguageViewController.swift in Sources */,
+				FA204112F3CA6ADB0143E329 /* LanguageModuleInput.swift in Sources */,
+				3D056FFEFD6E124F42F21375 /* LanguagePresenter.swift in Sources */,
+				F7BE85301E76F3E000D24CE2 /* HistoryTableViewCell.swift in Sources */,
+				BDBE69D6906735D1917CDF64 /* LanguageInteractorInput.swift in Sources */,
+				C262DCBDC145A2ADD79A34D1 /* LanguageInteractorOutput.swift in Sources */,
+				F7BE852A1E76878400D24CE2 /* TranslatedTextDAO.swift in Sources */,
+				667A077E7ED019FEF1EB76A6 /* LanguageInteractor.swift in Sources */,
+				A097AF1BB88752A274551948 /* LanguageRouterInput.swift in Sources */,
+				D5A04C9AA6ED7048AEBF5619 /* LanguageRouter.swift in Sources */,
+				596180E2A4A2F585C6A316E7 /* LanguageConfigurator.swift in Sources */,
+				5677E5B81BC2EB43D3A337B9 /* LanguageInitializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F76CD2331E67413F00D680A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76CD2341E67413F00D680A8 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F76CD2381E67413F00D680A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76CD2391E67413F00D680A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76CD23C1E67413F00D680A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F76CD23D1E67413F00D680A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76CD23F1E67413F00D680A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA518BF5F8BCFF3178477C86 /* Pods-YandexTranslator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = URPAD7DNKD;
+				INFOPLIST_FILE = YandexTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.voynov.YandexTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F76CD2401E67413F00D680A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B697EBCAC533520FBAFDB3EB /* Pods-YandexTranslator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = URPAD7DNKD;
+				INFOPLIST_FILE = YandexTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.voynov.YandexTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76CD2271E67413F00D680A8 /* Build configuration list for PBXProject "YandexTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76CD23C1E67413F00D680A8 /* Debug */,
+				F76CD23D1E67413F00D680A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76CD23E1E67413F00D680A8 /* Build configuration list for PBXNativeTarget "YandexTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76CD23F1E67413F00D680A8 /* Debug */,
+				F76CD2401E67413F00D680A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76CD2241E67413F00D680A8 /* Project object */;
+}
