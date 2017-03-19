@@ -8,15 +8,14 @@
 
 import Foundation
 
-typealias DetectBlock = (Result<DetectResponse>) -> ()
-typealias TranslateBlock = (Result<TranslateResponse>) -> ()
+typealias DetectBlock = (Result<DetectResponse>) -> Void
+typealias TranslateBlock = (Result<TranslateResponse>) -> Void
 
-typealias DictionaryBlock = (Result<Dictionary>) -> ()
+typealias DictionaryBlock = (Result<Dictionary>) -> Void
 
-typealias LangBlock = (Result<Lang>) -> ()
-typealias LangsBlock = (Result<[Lang]>) -> ()
-typealias DirectionsBlock = (Result<[Direction]>) -> ()
-typealias LangsDirectionsBlock = (Result<[Lang]>, Result<[Direction]>) -> ()
+typealias LangBlock = (Result<Lang>) -> Void
+typealias LangsBlock = (Result<[Lang]>) -> Void
+typealias DirectionsBlock = (Result<[Direction]>) -> Void
+typealias LangsDirectionsBlock = (Result<[Lang]>, Result<[Direction]>) -> Void
 
-typealias TranslatedBlock = (Result<[TranslatedText]>) -> ()
-
+typealias TranslatedBlock = (Result<[TranslatedText]>) -> Void

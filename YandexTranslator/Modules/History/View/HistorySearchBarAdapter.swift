@@ -30,7 +30,7 @@ extension HistorySearchBarAdapter: UISearchBarDelegate {
             output?.didFilteredList(filteredList)
         } else {
             output?.didFilteredList(self.items)
-        }        
+        }
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {

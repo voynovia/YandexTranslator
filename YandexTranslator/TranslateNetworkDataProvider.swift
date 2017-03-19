@@ -26,52 +26,56 @@ class TranslateNetworkDataProvider: NetworkDataProvider {
     // MARK: Translate Data Provider
     
     internal func detect(_ text: String, _ completionBlock: @escaping DetectBlock) {
-        performInBackground { [weak self] in
+        performInRealmQueue { [weak self] in
             var request = Request(TranslateRequest.detect)
             request.parameters?["text"] = text
+            // swiftlint:disable:next force_try
             self?.transport.requestObject(try! request.asURLRequest(), type: DetectResponse.self, completionBlock: { [weak self] result in
                 switch result {
-                case .value(let object): self?.performOnMainThread { completionBlock(Result.value(object)) }
-                case .error(let error): self?.performOnMainThread { completionBlock(Result.error(error)) }
+                case .value(let object): self?.performInMainQueue { completionBlock(Result.value(object)) }
+                case .error(let error): self?.performInMainQueue { completionBlock(Result.error(error)) }
                 }
             })
         }
     }
     
     internal func getLangsDirections(_ completionBlock: @escaping LangsDirectionsBlock) {
-        performInBackground { [weak self] in
+        performInRealmQueue { [weak self] in
+            // swiftlint:disable:next force_try
             self?.transport.requestJSON(try! Request(TranslateRequest.langs).asURLRequest(), completionBlock: { [weak self] result in
                 switch result {
                 case .value(let value): self?.handleTransportLangsData(value, completionBlock)
-                case .error(let error): self?.performOnMainThread { completionBlock(Result.error(error), Result.error(error)) }
+                case .error(let error): self?.performInMainQueue { completionBlock(Result.error(error), Result.error(error)) }
                 }
             })
         }
     }
     
     internal func translate(_ text: String, lang: String, _ completionBlock: @escaping TranslateBlock) {
-        performInBackground { [weak self] in
+        performInRealmQueue { [weak self] in
             var request = Request(TranslateRequest.translate)
             request.parameters?["text"] = text
             request.parameters?["lang"] = lang
+            // swiftlint:disable:next force_try
             self?.transport.requestObject(try! request.asURLRequest(), type: TranslateResponse.self, completionBlock: { [weak self] result in
                 switch result {
-                case .value(let object): self?.performOnMainThread { completionBlock(Result.value(object)) }
-                case .error(let error): self?.performOnMainThread { completionBlock(Result.error(error)) }
+                case .value(let object): self?.performInMainQueue { completionBlock(Result.value(object)) }
+                case .error(let error): self?.performInMainQueue { completionBlock(Result.error(error)) }
                 }
             })
         }
     }
     
     internal func dictionary(_ text: String, direction: String, _ completionBlock: @escaping DictionaryBlock) {
-        performInBackground { [weak self] in
+        performInRealmQueue { [weak self] in
             var request = Request(TranslateRequest.dictionary)
             request.parameters?["text"] = text
             request.parameters?["lang"] = direction
+            // swiftlint:disable:next force_try
             self?.transport.requestArray(try! request.asURLRequest(), keyPath: "def", type: Definition.self, completionBlock: { [weak self] result in
                 switch result {
                 case .value(let value): self?.handleTransportDictionaryData(text: text, direction: direction, array: value, completionBlock)
-                case .error(let error): self?.performOnMainThread { completionBlock(Result.error(error)) }
+                case .error(let error): self?.performInMainQueue { completionBlock(Result.error(error)) }
                 }
             })
         }
@@ -93,7 +97,7 @@ class TranslateNetworkDataProvider: NetworkDataProvider {
             let lang = Lang(abbr: langJSON.0, name: langJSON.1.stringValue)
             langs.append(lang)
         }
-        performOnMainThread { completionBlock(Result.value(langs), Result.value(directions)) }
+        performInMainQueue { completionBlock(Result.value(langs), Result.value(directions)) }
     }
     
     private func handleTransportDictionaryData(text: String, direction: String, array: [Definition], _ completionBlock: @escaping DictionaryBlock) {
@@ -104,6 +108,6 @@ class TranslateNetworkDataProvider: NetworkDataProvider {
             definitions.append(definition)
         }
         let dictionary = Dictionary(text: text.lowercased(), direction: direction.lowercased(), definitions: definitions)
-        performOnMainThread { completionBlock(Result.value(dictionary)) }
+        performInMainQueue { completionBlock(Result.value(dictionary)) }
     }
 }

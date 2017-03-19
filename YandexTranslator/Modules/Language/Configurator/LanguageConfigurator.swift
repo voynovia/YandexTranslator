@@ -1,4 +1,3 @@
-
 //  LanguageLanguageConfigurator.swift
 //  YandexTranslator
 //

@@ -14,7 +14,7 @@ extension String {
         return substring(from: index)
     }
     
-    func substring(to: String) -> String? {
+    func substring(to: String) -> String? { // swiftlint:disable:this variable_name
         guard let index = range(of: to)?.lowerBound else { return nil }
         return substring(to: index)
     }

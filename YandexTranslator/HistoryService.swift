@@ -13,7 +13,6 @@ protocol HistoryService: DataProvider {
     func getHistory(completionBlock: @escaping TranslatedBlock)
     func getFavourites(completionBlock: @escaping TranslatedBlock)
     
-//    func getTranslatedText(completionBlock: @escaping TranslatedBlock)
     func removeTranslatedText(_ text: TranslatedText)
     
     func setHistoryStateTranslatedText(_ text: TranslatedText, state: Bool)
@@ -43,16 +42,6 @@ class HistoryServiceImpl: HistoryService {
             }
         }
     }
-    
-//    func getTranslatedText(completionBlock: @escaping TranslatedBlock) {
-//        performInRealmQueue { [weak self] in
-//            if let texts = self?.translatedTextDao.fetchAll(), texts.count > 0 {
-//                self?.performInMainQueue { completionBlock(Result.value(texts)) }
-//            } else {
-//                self?.performInMainQueue { completionBlock(Result.error(Errors.noFetchedData)) }
-//            }
-//        }
-//    }
     
     func removeTranslatedText(_ text: TranslatedText) {
         self.translatedTextDao.delete(text)

@@ -7,8 +7,6 @@
 //
 
 protocol HistoryViewInput: class {
-
-    func setupView(withTexts texts: [TranslatedText])    
+    func setupView(withTexts texts: [TranslatedText])
     func setupInitialState()
-    
 }

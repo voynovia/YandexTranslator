@@ -91,7 +91,7 @@ class TranslatePresenter: TranslateModuleInput, TranslateViewOutput, TranslateIn
         view.setupView(withTranslate: text)
     }
     internal func didGetPairs(_ langs: [Lang]) {
-        if let lang = self.targetLanguage {            
+        if let lang = self.targetLanguage {
             if langs.filter({$0.abbr == lang.abbr}).count > 0 { self.targetLanguage = langs[0] }
         } else {
             self.targetLanguage = langs[0]

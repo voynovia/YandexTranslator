@@ -17,10 +17,10 @@ public enum Result<T> {
 }
 
 protocol Transport {
-    func requestData(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> ())
-    func requestJSON(_ request: URLRequest, completionBlock: @escaping (Result<Any>) -> ())
-    func requestObject<T: Mappable>(_ request: URLRequest, type: T.Type, completionBlock: @escaping (Result<T>) -> ())
-    func requestArray<T: Mappable>(_ request: URLRequest, keyPath: String?, type: T.Type, completionBlock: @escaping (Result<[T]>) -> ())
+    func requestData(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> Void)
+    func requestJSON(_ request: URLRequest, completionBlock: @escaping (Result<Any>) -> Void)
+    func requestObject<T: Mappable>(_ request: URLRequest, type: T.Type, completionBlock: @escaping (Result<T>) -> Void)
+    func requestArray<T: Mappable>(_ request: URLRequest, keyPath: String?, type: T.Type, completionBlock: @escaping (Result<[T]>) -> Void)
 }
 
 struct TransportImpl: Transport {
@@ -33,7 +33,7 @@ struct TransportImpl: Transport {
                                            serverTrustPolicyManager: nil)
     }
     
-    internal func requestData(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> ()) {
+    internal func requestData(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> Void) {
         manager.request(request).responseData { response in
             switch response.result {
             case .success(let value): completionBlock(Result.value(value))
@@ -42,7 +42,7 @@ struct TransportImpl: Transport {
         }
     }
     
-    internal func requestJSON(_ request: URLRequest, completionBlock: @escaping (Result<Any>) -> ()) {
+    internal func requestJSON(_ request: URLRequest, completionBlock: @escaping (Result<Any>) -> Void) {
         manager.request(request).validate().responseJSON { (response) in
             switch response.result {
             case .success(let value): completionBlock(Result.value(value))
@@ -51,9 +51,7 @@ struct TransportImpl: Transport {
         }
     }
     
-    internal func requestObject<T: Mappable>(_ request: URLRequest,
-                                type: T.Type,
-                                completionBlock: @escaping (Result<T>) -> ()) {
+    internal func requestObject<T: Mappable>(_ request: URLRequest, type: T.Type, completionBlock: @escaping (Result<T>) -> Void) {
         manager.request(request).validate().responseObject { (response: DataResponse<T>) in
             switch response.result {
             case .success(let value): completionBlock(Result.value(value))
@@ -62,10 +60,7 @@ struct TransportImpl: Transport {
         }
     }
     
-    internal func requestArray<T: Mappable>(_ request: URLRequest,
-                               keyPath: String? = nil,
-                               type: T.Type,
-                               completionBlock: @escaping (Result<[T]>) -> ()) {
+    internal func requestArray<T: Mappable>(_ request: URLRequest, keyPath: String? = nil, type: T.Type, completionBlock: @escaping (Result<[T]>) -> Void) {
         manager.request(request).responseArray(keyPath: keyPath != nil ? keyPath! : nil) { (response: DataResponse<[T]>) in
             switch response.result {
             case .success(let value): completionBlock(Result.value(value))

@@ -40,6 +40,6 @@ struct Request: URLRequestConvertible {
         let request = NSMutableURLRequest(url: Foundation.URL(string: path)!)
         request.httpMethod = method.rawValue
         if let headers = headers { for (key, value) in headers { request.addValue(value, forHTTPHeaderField: key) } }
-        return try! URLEncoding.queryString.encode(request as URLRequest, with: parameters)
+        return try URLEncoding.queryString.encode(request as URLRequest, with: parameters)
     }
 }

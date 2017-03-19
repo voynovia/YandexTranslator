@@ -15,7 +15,7 @@ public enum DAOResult {
 
 protocol Entity {}
 class Entry: Object {
-    dynamic var id: String = ""
+    dynamic var id: String = "" // swiftlint:disable:this variable_name
     override static func primaryKey() -> String? { return "id" }
 }
 
@@ -39,7 +39,7 @@ protocol DAO {
     func delete(_ entity: Entity)
     func deleteAll()
     func fetchAll(withParams params: [String: AnyObject]?) -> [Entity]
-    func fetchEntity(withId id: AnyObject) -> Entity?
+    func fetchEntity(withId id: AnyObject) -> Entity? // swiftlint:disable:this variable_name
 }
 
 extension DAO where Self.Entry: Object {
@@ -70,16 +70,17 @@ extension DAO where Self.Entry: Object {
     // MARK: CRUD
     func createWithUpdate(_ entities: [Entity]) {
         let entries = toEntries(entities)
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(entries, update: true)
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(entries, update: true)
+            }
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
     
-    func writeHelper(primaryKey: String,
-                      queue: DispatchQueue = .realmBackgroundQueue,
-                      errorHandler: ((Error) -> Void)? = nil,
-                      block: @escaping (Realm, Entry) -> Void) {
+    func writeHelper(primaryKey: String, queue: DispatchQueue = .realmBackgroundQueue, errorHandler: ((Error) -> Void)? = nil, block: @escaping (Realm, Entry) -> Void) {
         
         helper(write: true, queue: queue, errorHandler: errorHandler) { (realm) in
             guard let object = realm.object(ofType: Entry.self, forPrimaryKey: primaryKey) else { return }
@@ -122,17 +123,22 @@ extension DAO where Self.Entry: Object {
         return toEntities(fetchAllEntriesWithParams(params))
     }
     
-    func fetchEntity(withId id: AnyObject) -> Entity? {
-        if let entry = fetchEntryWithId(id) { return toEntity(entry) } else { return nil }
+    func fetchEntity(withId ident: AnyObject) -> Entity? {
+        if let entry = fetchEntryWithId(ident) { return toEntity(entry) } else { return nil }
     }
     
     // MARK: Private helpers
     fileprivate func fetchAllEntriesWithPredicate(_ predicate: NSPredicate) -> [Entry] {
-        let realm = try! Realm()
-        var results = realm.objects(Entry.self)
-        if let sortField = sortField { results = results.sorted(byKeyPath: sortField) }
-        results = results.filter(predicate)
-        return resultsToEntries(results)
+        do {
+            let realm = try Realm()
+            var results = realm.objects(Entry.self)
+            if let sortField = sortField { results = results.sorted(byKeyPath: sortField) }
+            results = results.filter(predicate)
+            return resultsToEntries(results)
+        } catch let error {
+            print(error.localizedDescription)
+            return []
+        }
     }
     
     fileprivate func resultsToEntries(_ results: Results<Entry>) -> [Entry] {
@@ -142,18 +148,28 @@ extension DAO where Self.Entry: Object {
     }
     
     fileprivate func fetchAllEntriesWithParams(_ params: [String: AnyObject]?) -> [Entry] {
-        let realm = try! Realm()
-        var results = realm.objects(Entry.self)
-        if let sortField = sortField { results = results.sorted(byKeyPath: sortField, ascending: ascending) }
-        if let filterString = predicateStringForParameters(params) , !filterString.isEmpty {
-            results = results.filter(filterString)
-        }
+        do {
+            let realm = try Realm()
+            var results = realm.objects(Entry.self)
+            if let sortField = sortField { results = results.sorted(byKeyPath: sortField, ascending: ascending) }
+            if let filterString = predicateStringForParameters(params), !filterString.isEmpty {
+                results = results.filter(filterString)
+            }
         return results.map { $0 }
+        } catch let error {
+            print(error.localizedDescription)
+            return []
+        }
     }
     
-    fileprivate func fetchEntryWithId(_ id: AnyObject) -> Entry? {
-        let realm = try! Realm()
-        if let result = realm.object(ofType: Entry.self, forPrimaryKey: id as AnyObject) { return result } else { return nil }
+    fileprivate func fetchEntryWithId(_ ident: AnyObject) -> Entry? {
+        do {
+            let realm = try Realm()
+            if let result = realm.object(ofType: Entry.self, forPrimaryKey: ident as AnyObject) { return result } else { return nil }
+        } catch let error {
+            print(error.localizedDescription)
+            return nil
+        }
     }
     
     fileprivate func predicateStringForParameters(_ parameters: [String: AnyObject]?) -> String? {

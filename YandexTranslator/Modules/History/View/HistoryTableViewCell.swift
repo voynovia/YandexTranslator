@@ -29,7 +29,6 @@ class HistoryTableViewCell: UITableViewCell {
                 self.history?.isFavourite = true
                 favButton.setBackgroundImage(#imageLiteral(resourceName: "favouritesActiveImage"), for: .normal)
             }
-            
             output?.didFavouriteState(history)
         }
     }

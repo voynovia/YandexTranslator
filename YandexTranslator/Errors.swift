@@ -23,6 +23,4 @@ public enum Errors: Error {
         default: return "request error"
         }
     }
-    
-    
 }

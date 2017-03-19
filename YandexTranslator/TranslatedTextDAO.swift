@@ -55,12 +55,6 @@ struct TranslatedTextDAO: DAO {
     }
         
     func update(_ entity: TranslatedText, block: @escaping (TranslatedTextEntry) -> Void) {
-        
-        helper(write: true) { (realm) in
-            guard let object = realm.object(ofType: Entry.self, forPrimaryKey: self.toEntry(entity).id) else { return }
-            realm.delete(object)
-        }
-        
         writeHelper(primaryKey: toEntry(entity).id) { (_, entry) in
             block(entry)
         }

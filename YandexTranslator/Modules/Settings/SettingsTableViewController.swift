@@ -68,6 +68,4 @@ class SettingsTableViewController: UITableViewController {
             segue.destination.title = label.text
         }
     }
-
-
 }

@@ -95,7 +95,6 @@
 		F7BE85301E76F3E000D24CE2 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE852F1E76F3E000D24CE2 /* HistoryTableViewCell.swift */; };
 		F7BE85321E76F4A800D24CE2 /* HistoryTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85311E76F4A800D24CE2 /* HistoryTableViewAdapter.swift */; };
 		F7BE85351E77110400D24CE2 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE85341E77110400D24CE2 /* HistoryService.swift */; };
-		F7BE86BF1E7D24B400D24CE2 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */; };
 		F7BE86C61E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C51E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift */; };
 		F7BE86C81E7DD6D300D24CE2 /* ViperModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C71E7DD6D300D24CE2 /* ViperModuleViewController.swift */; };
 		F7BE86CA1E7DD6F600D24CE2 /* ViperModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE86C91E7DD6F600D24CE2 /* ViperModuleInput.swift */; };
@@ -198,7 +197,6 @@
 		F7BE852F1E76F3E000D24CE2 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		F7BE85311E76F4A800D24CE2 /* HistoryTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewAdapter.swift; sourceTree = "<group>"; };
 		F7BE85341E77110400D24CE2 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
-		F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		F7BE86C51E7DD6BD00D24CE2 /* ViperModuleTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandler.swift; sourceTree = "<group>"; };
 		F7BE86C71E7DD6D300D24CE2 /* ViperModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleViewController.swift; sourceTree = "<group>"; };
 		F7BE86C91E7DD6F600D24CE2 /* ViperModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleInput.swift; sourceTree = "<group>"; };
@@ -588,7 +586,6 @@
 				F7BE851E1E6F04C400D24CE2 /* String.swift */,
 				F7BE85201E6F24BC00D24CE2 /* Array.swift */,
 				F7BE852D1E76F04D00D24CE2 /* UIView.swift */,
-				F7BE86BE1E7D24B400D24CE2 /* DispatchQueue.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -829,7 +826,6 @@
 				F7BE85351E77110400D24CE2 /* HistoryService.swift in Sources */,
 				4EED4770A6C12441323955A7 /* HistoryInteractorOutput.swift in Sources */,
 				F774F7B71E69D60100D518D9 /* TranslateResponse.swift in Sources */,
-				F7BE86BF1E7D24B400D24CE2 /* DispatchQueue.swift in Sources */,
 				F774F7DD1E6AE91900D518D9 /* TranslationDAO.swift in Sources */,
 				F76CD2481E69556700D680A8 /* TranslateService.swift in Sources */,
 				F7BE85321E76F4A800D24CE2 /* HistoryTableViewAdapter.swift in Sources */,

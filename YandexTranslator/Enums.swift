@@ -11,4 +11,3 @@ import Foundation
 enum SelectableLanguages {
     case source, target
 }
-

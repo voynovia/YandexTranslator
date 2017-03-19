@@ -6,7 +6,7 @@
 //  Copyright © 2017 Igor Voynov. All rights reserved.
 //
 
-typealias ConfigurationBlock = (ViperModuleInput) -> ()
+typealias ConfigurationBlock = (ViperModuleInput) -> Void
 
 struct ViperModuleConfigurationBlockHolder {
     let configurationBlock: ConfigurationBlock?
